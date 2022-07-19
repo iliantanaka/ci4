@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -9,3 +9,17 @@
 </head>
 
 <body>
+  <h1>
+    <?php print_r($marcas) ?>
+  </h1>
+
+  <br>
+
+  <ul>
+    <?php foreach ($marcas as $marca) : ?>
+      <li><?= $marca ?></li>
+    <?php endforeach; ?>
+  </ul>
+</body>
+
+</html>

@@ -5,12 +5,16 @@ namespace App\Controllers;
 
 class Main extends BaseController
 {
+
   public function index()
   {
-    $data['titulo'] = 'Este eh o titulo!!';
 
-    echo view('templates/header');
-    echo view('conteudo', $data);
-    echo view('templates/footer');
+    $marcas = [
+      'marca1',
+      'marca2',
+      'marca3'
+    ];
+
+    echo view('pagina', ['marcas' => $marcas]);
   }
 }
